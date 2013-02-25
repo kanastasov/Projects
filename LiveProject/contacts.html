@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Contact Us</title>
+	<script type="text/javascript" src="contactformvalidation.js"></script>
+	<script type="text/javascript" >
+	required.add('Full_Name','NOT_EMPTY','Full Name');
+	required.add('Email_Address','EMAIL','Email Address');
+	required.add('Your_Message','NOT_EMPTY','Your Message');
+	required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
+	</script>
+	<link rel="stylesheet" type="text/css" href="contactform.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="Live Project" content="projects, students, money" />
+	</head>
+	<body>
+	<div id="daddy">
+		<div id="header">
+			<div id="logo"><a href="./"><img src="images/logo.gif" alt="Your Company Logo" width="318" height="85" ></a><span id="logo-text"><a href="./"></a></span></div><!-- logo -->
+			<div id="menu">
+				<ul>
+					<li><a href="home.html" id="active">Home</a></li>
+					<li><a href="articles.html">Articles</a></li>
+					<li><a href="forums.html">Forums</a></li>
+					<li><a href="links.html">Links</a></li>
+					<li><a href="contacts.html">Contact</a></li>
+				</ul>
+			</div><!-- menu -->
+			<div id="ticker">
+			Visit <a href="#">Live Project</a> to get the latest projects on this website and learn more about it.
+			</div><!-- ticker -->
+			<div id="headerimage">
+				<div id="download"><span id="download-text"><a href="#">Live Project<br >Take part in it!</a></span></div><!-- download -->
+				<div id="icons">
+					<a href="./" ><img src="images/icon_home.gif" alt="Home" width="13" height="13" id="home"></a>
+					<a href="./"><img src="images/icon_sitemap.gif" alt="Sitemap" width="13" height="13" id="sitemap"></a>
+					<a href="./"><img src="images/icon_contact.gif" alt="Contact" width="13" height="13" id="contact"></a>			</div><!-- icons -->
+				<div id="slogan"></div>
+			</div>
+			<!-- headerimage -->
+		</div>
+	<div id="content">
+	
+	<div id="alignRight">
+		<div>
+		<form name="contactform" method="post" action="contactformprocess.php" onsubmit="return validate.check(this)">
+		<table width="400px" class="contactform">
+		<tr>
+		 <td colspan="2">
+		  
+		 <div class="contactformheader">Contact Live Project</div>
+		  
+		 <div class="contactformmessage">Fields marked with <span class="required_star"> * </span> are mandatory.</div>
+		  
+		 </td>
+		</tr>
+		<tr>
+		 <td valign="top">
+		  <label for="Full_Name" class="required">Full Name<span class="required_star"> * </span></label>
+		 </td>
+		 <td valign="top">
+		  <input type="text" name="Full_Name" id="Full_Name" maxlength="80" style="width:230px">
+		 </td>
+		</tr>
+		<tr>
+		 <td valign="top">
+		  <label for="Email_Address" class="required">Email Address<span class="required_star"> * </span></label>
+		 </td>
+		 <td valign="top">
+		  <input type="text" name="Email_Address" id="Email_Address" maxlength="100" style="width:230px">
+		 </td>
+		</tr>
+		<tr>
+		 <td valign="top">
+		  <label for="Telephone_Number" class="not-required">Telephone Number</label>
+		 </td>
+		 <td valign="top">
+		  <input type="text" name="Telephone_Number" id="Telephone_Number" maxlength="100" style="width:230px">
+		 </td>
+		</tr>
+		<tr>
+		 <td valign="top">
+		  <label for="Your_Message" class="required">Your Message<span class="required_star"> * </span></label>
+		 </td>
+		 <td valign="top">
+		  <textarea style="width:230px;height:160px" name="Your_Message" id="Your_Message"  rows="5" cols="35"  ></textarea>
+		 </td>
+		</tr>
+		<tr>
+		 <td colspan="2" style="text-align:center" >
+		  <div class="antispammessage">
+		  To help prevent automated spam, please answer this question
+		  <br ><br >
+			  <div class="antispamquestion">
+			   <span class="required_star"> * </span>
+			   Using only numbers, what is 10 plus 15? &nbsp; 
+			   <input type="text" name="AntiSpam" id="AntiSpam" maxlength="100" style="width:30px">
+			  </div>
+		  </div>
+		 </td>
+		</tr>
+		<tr>
+		 <td colspan="2" style="text-align:center" >
+		 <br ><br >
+		  <input type="submit" value=" Submit Form " style="width:200px;height:40px">
+		  <br ><br >
+		  <div style="font-size:0.9em"><a>Are you going to read all day or submit the form?</a></div>
+		  <br ><br >
+		 </td>
+		</tr>
+		</table>
+	</form>
+	</div>
+	</div>
+	
+	
+	
+	</div>
+	
+	
+ <div id="footer">
+	<div id="foot">
+		<div id="foot1"><a href="./">Privacy Policy</a> - <a href="./">Terms Of Use</a></div><!-- foot1 -->
+		<div id="foot2">
+			<span class="valid">Interesting <a href="http://validator.w3.org/check?uri=referer">Live</a> + <a href="http://jigsaw.w3.org/css-validator/check/referer">Projects</a></span>Copyright 2012, Live Project. Designed  and Developed by <a href="http://www.symisun.com/" title="We digitalize your ambitions">Kiril Anastosov<span class="star">*</span></a>
+		</div><!-- foot1 -->
+	</div><!-- foot -->
+</div><!-- footer -->
+</div>
+</body>
+
+
+</html>
